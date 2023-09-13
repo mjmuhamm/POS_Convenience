@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MonthlyMenu" customModule="POS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="IiY-si-tMf" customClass="MonthlyMenu" customModule="POS" customModuleProvider="target"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="173" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zjS-mf-1ON">
+                    <rect key="frame" x="7" y="20" width="160" height="94"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kIS-Bk-WMk">
+                            <rect key="frame" x="-2" y="66" width="164" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="160" id="gFH-H1-Rkv"/>
+                            </constraints>
+                            <textFieldCell key="cell" alignment="center" title="Pancake w/Syrup or Peach Yogurt Parfait" id="sB5-kZ-U0L">
+                                <font key="font" metaFont="smallSystem"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hBZ-ia-n41">
+                            <rect key="frame" x="-2" y="44" width="164" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="160" id="0xY-Zv-r53"/>
+                            </constraints>
+                            <textFieldCell key="cell" alignment="center" title="Fresh Banana" id="jCe-oS-G18">
+                                <font key="font" metaFont="smallSystem"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3yL-6w-9yY">
+                            <rect key="frame" x="-2" y="22" width="164" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="160" id="cXU-CG-faa"/>
+                            </constraints>
+                            <textFieldCell key="cell" alignment="center" title="Sliced Peaches" id="GyB-uP-L4o">
+                                <font key="font" metaFont="smallSystem"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YJd-al-JMX">
+                            <rect key="frame" x="-2" y="0.0" width="164" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="160" id="pRO-ur-Pkz"/>
+                            </constraints>
+                            <textFieldCell key="cell" alignment="center" title="Fat Free / Low Fat Milk" id="W3f-BO-MSG">
+                                <font key="font" metaFont="smallSystem"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PT0-Zq-rCV">
+                    <rect key="frame" x="27" y="125" width="120" height="14"/>
+                    <textFieldCell key="cell" alignment="left" title="Monday, May 1, 2023" id="Gph-WT-t9H">
+                        <font key="font" metaFont="systemSemibold" size="11"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="zjS-mf-1ON" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="7" id="0KF-xn-Ku7"/>
+                <constraint firstItem="zjS-mf-1ON" firstAttribute="top" secondItem="PT0-Zq-rCV" secondAttribute="bottom" constant="11" id="HtL-tn-mab"/>
+                <constraint firstAttribute="trailing" secondItem="zjS-mf-1ON" secondAttribute="trailing" constant="6" id="ZFH-tN-zVa"/>
+                <constraint firstItem="PT0-Zq-rCV" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="rRD-4X-SBO"/>
+                <constraint firstItem="PT0-Zq-rCV" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="6" id="sVY-Mk-uef"/>
+            </constraints>
+            <point key="canvasLocation" x="-14.5" y="71.5"/>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner">
+            <connections>
+                <outlet property="button" destination="ydM-zZ-fQB" id="BDE-AU-e6L"/>
+                <outlet property="label" destination="leh-Me-TP7" id="iJY-3V-Kwb"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="F0v-Gc-2fP" customClass="SchoolCollection" customModule="POS" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="ydM-zZ-fQB" id="gyC-13-4l3"/>
+                <outlet property="label" destination="leh-Me-TP7" id="qMY-47-PdH"/>
+            </connections>
+        </customObject>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="leh-Me-TP7">
+                    <rect key="frame" x="8" y="32" width="134" height="16"/>
+                    <textFieldCell key="cell" alignment="center" title="Label" id="S5T-ZZ-J7w">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="ydM-zZ-fQB">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="79" id="GGG-KB-RZd"/>
+                        <constraint firstAttribute="width" constant="150" id="H4X-G5-zU9"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="kOK-SJ-GsU">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="buttonPressed:" target="-2" id="26d-vt-INc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ydM-zZ-fQB" secondAttribute="trailing" id="2Qn-f0-fdO"/>
+                <constraint firstAttribute="trailing" secondItem="leh-Me-TP7" secondAttribute="trailing" constant="10" id="DbR-Zs-FA6"/>
+                <constraint firstItem="leh-Me-TP7" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="IRp-6A-k51"/>
+                <constraint firstItem="leh-Me-TP7" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="PaA-mC-Gqk"/>
+                <constraint firstItem="leh-Me-TP7" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="X34-Is-oob"/>
+                <constraint firstItem="ydM-zZ-fQB" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="aJL-ao-L9g"/>
+                <constraint firstItem="ydM-zZ-fQB" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="hcO-Eb-qBR"/>
+                <constraint firstAttribute="bottom" secondItem="ydM-zZ-fQB" secondAttribute="bottom" id="lmE-xQ-O2U"/>
+            </constraints>
+            <point key="canvasLocation" x="62" y="148.5"/>
+        </customView>
+    </objects>
+</document>
