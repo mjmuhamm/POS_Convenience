@@ -9,6 +9,7 @@ import Cocoa
 
 class MessageSplit: NSSplitViewController {
 
+    var variable = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.

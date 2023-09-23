@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import AppKit
+
+struct Members {
+    let image: NSImage
+    let text: String
+}

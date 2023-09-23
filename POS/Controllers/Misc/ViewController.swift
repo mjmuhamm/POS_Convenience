@@ -33,6 +33,7 @@ class ViewController: NSViewController {
     @IBAction func pictureButtonPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "segue1", sender: self)
         
+        
     }
     
     

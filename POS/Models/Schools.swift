@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Schools {
+    let typeOfSchool: String
+    let school: String
+}

@@ -9,6 +9,9 @@ import Cocoa
 
 class InventoryList: NSTableCellView {
 
+    @IBOutlet var product: NSTextField!
+    @IBOutlet var quantity: NSTextField!
+    
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 

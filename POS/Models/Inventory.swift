@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct InventoryList {
+struct Inventory {
     let product: String
     let quantity: String
 }

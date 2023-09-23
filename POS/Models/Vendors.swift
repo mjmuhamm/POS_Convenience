@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+
+struct Vendors {
+    let vendor: String
+    let email: String
+    let phone: String
+    
+}

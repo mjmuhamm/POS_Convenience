@@ -9,9 +9,29 @@ import Cocoa
 
 class GM: NSSplitViewController {
 
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        
+        
+        
+            
+        
     }
     
+   
+  
 }
+
+
+   
+
+    
+    
+

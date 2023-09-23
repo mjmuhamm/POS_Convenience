@@ -31,11 +31,11 @@ class AnotherView: NSViewController, ChartViewDelegate {
         self.view.layer!.backgroundColor = NSColor.white.cgColor
         
         
-        collectionView.register(NSNib(nibNamed: "CollectionViewItem", bundle: nil), forItemWithIdentifier: NSUserInterfaceItemIdentifier(rawValue: "CollectionViewItem"))
+//        collectionView.register(NSNib(nibNamed: "CollectionViewItem", bundle: nil), forItemWithIdentifier: NSUserInterfaceItemIdentifier(rawValue: "CollectionViewItem"))
         
         
-        collectionView.dataSource = self
-        collectionView.delegate = self
+//        collectionView.dataSource = self
+//        collectionView.delegate = self
    
         
         loadi()
@@ -62,7 +62,6 @@ class AnotherView: NSViewController, ChartViewDelegate {
       // 2
       view.wantsLayer = true
       // 3
-      collectionView.layer?.backgroundColor = NSColor.black.cgColor
     }
     
     private func setupData() {

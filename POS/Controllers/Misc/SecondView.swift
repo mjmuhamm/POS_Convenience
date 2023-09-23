@@ -20,7 +20,7 @@ class SecondView: NSViewController {
         image1.layer?.cornerRadius = image1.frame.height/2
         image1.layer?.masksToBounds = true
         view.wantsLayer = true
-        self.view.layer?.backgroundColor = NSColor.brown.cgColor
+        self.view.layer?.backgroundColor = NSColor.black.cgColor
     }
     @IBAction func backButton(_ sender: Any) {
         self.dismiss(true)

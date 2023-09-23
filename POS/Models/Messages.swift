@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Messages {
+    let homeOrAway: String
+    let message: String
+    let date: String
+}
