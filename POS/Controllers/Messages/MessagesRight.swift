@@ -45,7 +45,7 @@ class MessagesRight: NSViewController {
     
   
     func previewMessages() {
-        let randomInt4 = Int.random(in: 1..<10)
+        let randomInt4 = Int.random(in: 1..<20)
         
         if randomInt4 == 2 {
             var z = "No Messages Yet"

@@ -401,6 +401,9 @@ class GMRight: NSViewController, ChartViewDelegate {
             schools.removeAll()
             collectionView.animator().reloadData()
         }
+        schools.append(Schools(typeOfSchool: "Elementary", school: "Elementary"))
+        schools.append(Schools(typeOfSchool: "Middle School", school: "Middle School"))
+        schools.append(Schools(typeOfSchool: "High School", school: "High School"))
         schools.append(Schools(typeOfSchool: "Elementary", school: "Bethune"))
         schools.append(Schools(typeOfSchool: "Elementary", school: "Banneker @ Marquette"))
         schools.append(Schools(typeOfSchool: "Elementary", school: "Beveridge"))
