@@ -63,6 +63,8 @@ class GMRight: NSViewController, ChartViewDelegate {
     
     
     @IBOutlet var monthlyMenuLabel: NSTextField!
+    
+    @IBOutlet var monthlyMenuEditButton: NSButton!
     @IBOutlet var monthlyScrollView: NSScrollView!
     @IBOutlet var monthlyCollectionView: NSCollectionView!
     
@@ -317,6 +319,7 @@ class GMRight: NSViewController, ChartViewDelegate {
         self.dayOfTheWeekLabel.isHidden = true
         self.monthlyScrollView.isHidden = true
         self.monthlyMenuLabel.isHidden = true
+        self.monthlyMenuEditButton.isHidden = true
         self.staffView.isHidden = true
         self.inventoryView.isHidden = false
         self.collectionScrollView.isHidden = true
@@ -633,6 +636,7 @@ class GMRight: NSViewController, ChartViewDelegate {
         dayOfTheWeekLabel.isHidden = true
         monthlyScrollView.isHidden = true
         monthlyMenuLabel.isHidden = true
+        monthlyMenuEditButton.isHidden = true
         menuView.isHidden = true
         setupMenu()
         
@@ -681,9 +685,9 @@ class GMRight: NSViewController, ChartViewDelegate {
             menuStack.isHidden = false
             collectionScrollView.isHidden = false
             monthlyMenuLabel.isHidden = true
+            monthlyMenuEditButton.isHidden = true
             
             monthlyScrollView.isHidden = true
-            monthlyMenuLabel.isHidden = true
             menuStack.isHidden = true
             menuView.isHidden = false
             
@@ -782,6 +786,8 @@ class GMRight: NSViewController, ChartViewDelegate {
         dayOfTheWeekLabel.isHidden = true
         monthlyScrollView.isHidden = true
         monthlyMenuLabel.isHidden = true
+        monthlyMenuEditButton.isHidden = true
+        
         menuView.isHidden = true
         staffScrollView.isHidden = true
         totalTimesLateByStaffLabel.isHidden = true
@@ -822,6 +828,8 @@ class GMRight: NSViewController, ChartViewDelegate {
             dayOfTheWeekLabel.isHidden = true
             monthlyScrollView.isHidden = true
             monthlyMenuLabel.isHidden = true
+            monthlyMenuEditButton.isHidden = true
+            
             menuView.isHidden = true
             
             //Staff
@@ -1485,6 +1493,8 @@ extension GMRight: NSCollectionViewDelegate, NSCollectionViewDataSource {
                         self.dayOfTheWeekLabel.isHidden = false
                         self.monthlyScrollView.isHidden = false
                         self.monthlyMenuLabel.isHidden = false
+                        self.monthlyMenuEditButton.isHidden = false
+                        
                         self.menuStack.isHidden = false
                         self.setupMonthlyMenu()
                         
@@ -1521,6 +1531,8 @@ extension GMRight: NSCollectionViewDelegate, NSCollectionViewDataSource {
                         self.dayOfTheWeekLabel.isHidden = true
                         self.monthlyScrollView.isHidden = true
                         self.monthlyMenuLabel.isHidden = true
+                        self.monthlyMenuEditButton.isHidden = true
+                        
                         self.menuStack.isHidden = true
                         self.typeOfSchool.isHidden = true
                         self.monthlyMenu.removeAll()

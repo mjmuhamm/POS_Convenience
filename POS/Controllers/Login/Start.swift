@@ -22,6 +22,7 @@ class Start: NSViewController {
         // Do view setup here.
         view.wantsLayer = true
         view.layer?.backgroundColor = NSColor(deviceRed: 48/255, green: 48/255, blue: 48/255, alpha: 1).cgColor
+//        view.window?.center()
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {

@@ -54,6 +54,8 @@ class GMLeft: NSViewController {
     
     @IBAction func headshotButton(_ sender: Any) {
         self.performSegue(withIdentifier: "segue1", sender: self)
+        
+        
     }
     
     
@@ -82,6 +84,8 @@ class GMLeft: NSViewController {
         vc.dayOfTheWeekLabel.isHidden = true
         vc.monthlyScrollView.isHidden = true
         vc.monthlyMenuLabel.isHidden = true
+        vc.monthlyMenuEditButton.isHidden = true
+        
         vc.button1.bezelColor = NSColor(red: 85/255, green: 85/255, blue: 85/255, alpha: 1)
         vc.button2.bezelColor = NSColor(red: 85/255, green: 85/255, blue: 85/255, alpha: 1)
         vc.button3.bezelColor = NSColor(red: 85/255, green: 85/255, blue: 85/255, alpha: 1)
@@ -178,6 +182,8 @@ class GMLeft: NSViewController {
         vc.dayOfTheWeekLabel.isHidden = true
         vc.monthlyScrollView.isHidden = true
         vc.monthlyMenuLabel.isHidden = true
+        vc.monthlyMenuEditButton.isHidden = true
+        
         vc.collectionScrollView.isHidden = false
         vc.button1.bezelColor = NSColor.lightGray
         vc.button2.bezelColor = NSColor.black
@@ -259,6 +265,8 @@ class GMLeft: NSViewController {
         vc.dayOfTheWeekLabel.isHidden = true
         vc.monthlyScrollView.isHidden = true
         vc.monthlyMenuLabel.isHidden = true
+        vc.monthlyMenuEditButton.isHidden = true
+        
         vc.button1.bezelColor = NSColor.lightGray
         vc.button2.bezelColor = NSColor.black
         vc.button3.bezelColor = NSColor.black
@@ -438,6 +446,8 @@ class GMLeft: NSViewController {
         vc.dayOfTheWeekLabel.isHidden = true
         vc.monthlyScrollView.isHidden = true
         vc.monthlyMenuLabel.isHidden = true
+        vc.monthlyMenuEditButton.isHidden = true
+        
         vc.button1.bezelColor = NSColor.lightGray
         vc.button2.bezelColor = NSColor.black
         vc.button3.bezelColor = NSColor.black

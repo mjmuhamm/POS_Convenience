@@ -32,6 +32,11 @@ class MessagesRight: NSViewController {
         
         
         
+        view.wantsLayer = true
+        self.view.layer?.backgroundColor = NSColor(deviceRed: 48/255, green: 48/255, blue: 48/255, alpha: 1).cgColor
+        
+        
+        
         headshot.wantsLayer = true
         headshot.layer?.borderWidth = 1
         headshot.layer?.masksToBounds = false
