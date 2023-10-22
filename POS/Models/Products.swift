@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Schools {
+struct ProductTypes {
     let typeOfSchool: String
     let school: String
 }

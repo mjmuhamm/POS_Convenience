@@ -2,20 +2,16 @@
 //  InventoryList.swift
 //  POS
 //
-//  Created by Malik Muhammad on 7/17/23.
+//  Created by Malik Muhammad on 10/20/23.
 //
 
 import Cocoa
 
-class InventoryList: NSTableCellView {
+class InventoryList: NSCollectionViewItem {
 
-    @IBOutlet var product: NSTextField!
-    @IBOutlet var quantity: NSTextField!
-    
-    override func draw(_ dirtyRect: NSRect) {
-        super.draw(dirtyRect)
-
-        // Drawing code here.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do view setup here.
     }
     
 }
